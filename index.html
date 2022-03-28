@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+            integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Weather Dashboard by Mason Morris</title>
+    </head>
+    <body>
+        <header></header>
+        <div id="container">
+            <section id="search-container">
+                <h2>Search for a city:</h2>
+                <form id="search-form">
+                    <br />
+                    <input type="text" name="city-search" id="city-search" />
+                    <br />
+                    <input type="submit" name="search-submit" class="button" id="search-submit" value="Search" />
+                </form>
+                <div id="pinned-container"></div>
+            </section>
+            <section id="weather-container">
+                <div id="current-weather"></div>
+                <div id="forecast"></div>
+            </section>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/dayjs.min.js"
+        integrity="sha512-KTFpdbCb05CY4l242bLjyaPhoL9vAy4erP1Wkn7Rji0AG6jx6zzGtKkdHc7jUOYOVSmbMbTg728u260CA/Qugg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+</html>
