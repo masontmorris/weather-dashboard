@@ -17,9 +17,29 @@ header {
     background-color: blue;
 }
 
+#pinned-container {
+    display: flex;
+    flex-direction: column;
+}
+
 #weather-container {
     min-height: 600px;
     min-width: 200px;
     background-color: green;
     flex: 4 1 content;
+}
+
+#forecast {
+    display: flex;
+}
+
+.forecast-card {
+    margin: 1em;
+    padding: 0.5em;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.search-item {
+    width: 100px;
 }
