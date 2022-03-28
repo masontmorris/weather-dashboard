@@ -12,7 +12,7 @@ function onLoad() {
     queryArray = JSON.parse(localStorage.getItem("queryArray"));
     queryArray = queryArray || [];
     for (let i = 0; i < queryArray.length; i++) {
-        $("#pinned-container").append(`<button type='button' class="search-item">${queryArray[i].cityName}</button>`);
+        $("#pinned-container").append(`<button type='button' class="button is-dark search-item">${queryArray[i].cityName}</button>`);
         console.log(queryArray[i].cityName);
     }
 }
@@ -27,7 +27,7 @@ async function getWeatherData(query) {
         let cityName = geoData[0].name;
         let newEntry = new Entry(cityName, lat, lon);
         if (queryArray.filter((obj) => obj.cityName == cityName).length == 0) {
-            $("#pinned-container").append(`<button type='button' class="search-item">${cityName}</button>`);
+            $("#pinned-container").append(`<button type='button' class="button is-dark search-item">${cityName}</button>`);
             queryArray.push(newEntry);
         }
         localStorage.setItem("queryArray", JSON.stringify(queryArray));
