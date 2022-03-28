@@ -4,6 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+            integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <title>Weather Dashboard by Mason Morris</title>
     </head>
@@ -11,12 +18,12 @@
         <header></header>
         <div id="container">
             <section id="search-container">
+                <h2>Search for a city:</h2>
                 <form id="search-form">
-                    <label for="city-search">Search for a city:</label>
                     <br />
                     <input type="text" name="city-search" id="city-search" />
                     <br />
-                    <input type="submit" name="search-submit" id="search-submit" value="Search" />
+                    <input type="submit" name="search-submit" class="button" id="search-submit" value="Search" />
                 </form>
                 <div id="pinned-container"></div>
             </section>
